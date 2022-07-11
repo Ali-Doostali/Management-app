@@ -1,10 +1,17 @@
-
-import './App.css';
+import "./App.css";
+import SideBar from "./components/sidebar/SideBar";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-     <h1>this is test...</h1>
+    <div>
+      <div className="App">
+        <SideBar />
+        <Routes>  
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
     </div>
   );
 }
