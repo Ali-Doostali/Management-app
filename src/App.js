@@ -1,7 +1,7 @@
 import "./App.css";
 import SideBar from "./components/sidebar/SideBar";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home/Home";
+import ExpenseApp from "./components/ExpenseTracker/ExpenseApp";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <div className="App">
         <SideBar />
         <Routes>  
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<ExpenseApp />} />
         </Routes>
       </div>
     </div>

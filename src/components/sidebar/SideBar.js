@@ -18,9 +18,6 @@ const SideBar = () => {
       </div>
       <div className="sid-item">
         <Link to="/" className="sid-link">
-          <AiFillHome className="icon" />
-        </Link>
-        <Link to="/" className="sid-link">
           <BsCashCoin className="icon" />
         </Link>
         <Link to="/" className="sid-link">

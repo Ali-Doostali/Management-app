@@ -1,5 +1,5 @@
 .sid-container {
-  background: #96c5bd;
+  background-color: #ffb703;
   height: 100%;
   width: 45px;
   position: relative;
@@ -25,11 +25,11 @@
 .img img {
   width: 35px;
   border-radius: 50%;
-  border: 2px solid #a78bfa;
+  border: 2px solid #14213d;
 }
 .img img:hover {
   width: 35px;
-  border: 2px solid #f87676;
+  border: 2px solid #6411ad;
 }
 .img div {
   background-color: rgb(31, 255, 31);
@@ -39,14 +39,14 @@
   margin-left: 24px;
 }
 .sid-link {
-  color: #6d28d9;
+  color: #14213d;
   display: grid;
   padding: 0.5rem 0.8rem;
   margin-top: 5px;
   margin-bottom: 12px;
 }
 .sid-link :hover {
-  color: #f87676;
+  color: #6d28d9;
 }
 .icon {
   width: 20px;
