@@ -1,8 +1,8 @@
 .sid-container {
-  background-color: #ffb703;
+  background-color: #ffa200;
   height: 100%;
-  width: 45px;
-  position: relative;
+  width: 70px;
+  position: fixed;
   grid-column: 1/2;
   grid-row: 1/3;
   flex-direction: column;
@@ -12,43 +12,42 @@
 }
 .sid-item {
   padding-top: 15px;
+  
 }
 
 .sid-img {
-  margin-top: 30px;
+  margin-top: 4rem;
+  margin-bottom: 20px;
   padding: 5px 5px 5px 0;
+  margin-bottom: 50px;
 }
 
 .img {
-  margin-left: 3px;
+  margin-left: 6px;
+  
 }
 .img img {
-  width: 35px;
+  position: fixed;
+  width: 55px;
   border-radius: 50%;
   border: 2px solid #14213d;
 }
 .img img:hover {
-  width: 35px;
-  border: 2px solid #6411ad;
-}
-.img div {
-  background-color: rgb(31, 255, 31);
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  margin-left: 24px;
+  width: 55px;
+  border: 2px solid #7b3eb1;
 }
 .sid-link {
   color: #14213d;
   display: grid;
   padding: 0.5rem 0.8rem;
   margin-top: 5px;
-  margin-bottom: 12px;
+  margin-bottom: 35px;
+  margin-left: 6px;
 }
 .sid-link :hover {
-  color: #6d28d9;
+  color: #7b3eb1;
 }
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
 }

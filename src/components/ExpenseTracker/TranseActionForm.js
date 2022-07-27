@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { XyzTransitionGroup } from "@animxyz/react";
 
 const TranseActionForm = ({ addTransaction, setIsShow }) => {
   const [formValues, setFormValues] = useState({
@@ -17,58 +18,63 @@ const TranseActionForm = ({ addTransaction, setIsShow }) => {
   };
 
   return (
-    <form onSubmit={submitHandler}>
-      <input
-        className="input"
-        type="text"
-        name="desc"
-        placeholder="Description"
-        value={formValues.desc}
-        onChange={changeHandler}
-      />
-      <input
-        className="input"
-        type="number"
-        name="amount"
-        placeholder="Amount"
-        value={formValues.amount}
-        onChange={changeHandler}
-      />
-      <div className="radioBox">
+    <XyzTransitionGroup
+      appear
+      xyz="fade small out-down out-rotate-right appear-stagger"
+    >
+      <form onSubmit={submitHandler}>
         <input
-          className="radioInput"
-          type="radio"
-          value="expense"
-          name="type"
+          className="input"
+          type="text"
+          name="desc"
+          placeholder="Description"
+          value={formValues.desc}
           onChange={changeHandler}
-          checked={formValues.type === "expense"}
-          id="expense"
         />
-        <label
-          style={{ marginLeft: "1px", marginRight: "5px" }}
-          htmlFor="expense"
-        >
-          Expense
-        </label>
         <input
-          type="radio"
-          value="income"
-          name="type"
+          className="input"
+          type="number"
+          name="amount"
+          placeholder="Amount"
+          value={formValues.amount}
           onChange={changeHandler}
-          checked={formValues.type === "income"}
-          id="income"
         />
-        <label
-          style={{ marginLeft: "1px", marginRight: "5px" }}
-          htmlFor="income"
-        >
-          Income
-        </label>
-      </div>
-      <button className="btn primary" type="submit">
-        Add Transaction
-      </button>
-    </form>
+        <div className="radioBox">
+          <input
+            className="radioInput"
+            type="radio"
+            value="expense"
+            name="type"
+            onChange={changeHandler}
+            checked={formValues.type === "expense"}
+            id="expense"
+          />
+          <label
+            style={{ marginLeft: "3px", marginRight: "20px" }}
+            htmlFor="expense"
+          >
+            Expense
+          </label>
+          <input
+            type="radio"
+            value="income"
+            name="type"
+            onChange={changeHandler}
+            checked={formValues.type === "income"}
+            id="income"
+          />
+          <label
+            style={{ marginLeft: "1px", marginRight: "5px" }}
+            htmlFor="income"
+          >
+            Income
+          </label>
+        </div>
+        <button className="btn primary" type="submit">
+          Add Transaction
+        </button>
+      </form>
+    </XyzTransitionGroup>
   );
 };
 

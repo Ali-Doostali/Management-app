@@ -1,7 +1,9 @@
 import "./App.css";
+import "@animxyz/core";
 import SideBar from "./components/sidebar/SideBar";
 import { Routes, Route } from "react-router-dom";
 import ExpenseApp from "./components/ExpenseTracker/ExpenseApp";
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
         <SideBar />
         <Routes>  
           <Route path="/" element={<ExpenseApp />} />
+          
         </Routes>
       </div>
     </div>

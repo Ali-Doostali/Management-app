@@ -3,5 +3,5 @@
   display: grid;
   justify-content: flex-start;
   grid-template-columns: 38px 850px;
-  grid-template-rows: 438px auto;
+  grid-template-rows: 657px;
 }

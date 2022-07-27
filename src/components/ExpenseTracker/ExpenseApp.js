@@ -34,7 +34,7 @@ const ExpenseApp = () => {
   return (
     <div className="container">
       <section className="section">
-      <h2>Expense Tracker</h2>
+      <h2>ExpenseTracker</h2>
         <OverView
           expense={expense}
           income={income}
