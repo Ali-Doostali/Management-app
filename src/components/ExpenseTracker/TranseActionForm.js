@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { XyzTransitionGroup } from "@animxyz/react";
+import Swal from 'sweetalert2'
 
 const TranseActionForm = ({ addTransaction, setIsShow }) => {
   const [formValues, setFormValues] = useState({
@@ -15,6 +16,16 @@ const TranseActionForm = ({ addTransaction, setIsShow }) => {
     e.preventDefault();
     addTransaction(formValues);
     setIsShow(false);
+    Swal.fire({
+      position: 'top',
+      icon: 'success',
+      title: 'Expense Added successfully',
+      showConfirmButton: false,
+      timer: 1000,
+      width: "500px",
+      height : 200,
+      background : "#f6fff2",
+    })
   };
 
   return (
@@ -22,7 +33,7 @@ const TranseActionForm = ({ addTransaction, setIsShow }) => {
       appear
       xyz="fade small out-down out-rotate-right appear-stagger"
     >
-      <form onSubmit={submitHandler}>
+      <form className="form-expense" onSubmit={submitHandler}>
         <input
           className="input"
           type="text"

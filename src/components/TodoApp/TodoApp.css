@@ -1,0 +1,165 @@
+.container {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  width: 1328px;
+  align-items: center;
+  background-color: #f5f6fc;
+  padding: auto;
+}
+.container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  padding: 10px;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+}
+.completed {
+  text-decoration: line-through;
+  color: #949d93;
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.h2-todo {
+  color: #ff7d03;
+  font-size: 40px;
+  margin-top: 5rem;
+  margin-left: 45px;
+  margin-bottom: 70px;
+  width: 0ch;
+  overflow: hidden;
+  animation: typingH2 1s steps(15) forwards 1s;
+}
+
+@keyframes typingH2 {
+  100% {
+    width: 15ch;
+  }
+}
+
+.formControl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25rem;
+  margin: 20px 0;
+}
+.input-todo {
+  padding-left: 8px;
+  height: 38px;
+  width: 230px;
+  background-color: rgb(247, 241, 241);
+  border: 1px solid rgb(240, 232, 232);
+  box-shadow: 5px 10px 8px #d3d3d3;
+  border-radius: 10px;
+  outline: none;
+  color: #7b3eb1;
+  font-size: 23px;
+}
+.input-todo::placeholder {
+  color: #c4c6c7;
+  font-size: 20px;
+}
+
+.btnEdit-todo {
+  width: 50px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  margin-left: 5px;
+}
+.img-edit {
+  width: 30px;
+}
+.img-edit:hover {
+  width: 35px;
+  cursor: pointer;
+}
+.btnDelete-todo {
+  height: 40px;
+  width: 50px;
+  font-size: 25px;
+  outline: none;
+  color: #f31243;
+  border: none;
+  background-color: #fff;
+}
+.btnDelete-todo:hover {
+  height: 40px;
+  width: 50px;
+  font-size: 30px;
+  outline: none;
+  color: #f31243;
+  cursor: pointer;
+}
+
+.todoText {
+  color: #14213d;
+  cursor: default;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.checkbox-todo {
+  margin-top: 7px;
+  width: 25px;
+  height: 24px;
+  cursor: pointer;
+  color: #7b3eb1;
+}
+.checkbox-todo:hover {
+  margin-top: 7px;
+  width: 27px;
+  height: 26px;
+  cursor: pointer;
+  color: #7b3eb1;
+}
+.p-todo {
+  font-size: 30px;
+  color: #7b3eb1;
+}
+
+.header {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+}
+.select {
+  width: 172px;
+  margin-left: 7px;
+  margin-top: 2px;
+  padding: 2px 5px;
+  border-radius: 2px;
+  color: #6d28d9;
+  border-color: #6d28d9;
+}
+.span-todo {
+  margin-right: 10px;
+  margin-top: 1px;
+  display: inline-block;
+  width: 25px;
+  font-size: 25px;
+  height: 25px;
+  background-color: #d0c7f7;
+  color: #6d28d9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h2-nav-todo {
+  margin: 20px 20px 20px 0;
+  color: #14213d;
+}

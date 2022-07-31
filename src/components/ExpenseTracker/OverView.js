@@ -12,7 +12,7 @@ const OverView = ({ expense, income, addTransaction }) => {
         xyz="fade small out-down out-rotate-right appear-stagger"
       >
         <div className="topSection">
-          <p style={{ color: "#949d93 ", fontSize: "25px" }}>
+          <p style={{ color: "#8d8d8d ", fontSize: "25px" }}>
             Balance :
             <span
               style={{
@@ -43,11 +43,11 @@ const OverView = ({ expense, income, addTransaction }) => {
             style={{
               borderColor: "#e9cac3",
               backgroundColor: "#e9cac3",
-              color: "#949d93",
+              color: "#8d8d8d",
               fontSize: "25px",
             }}
           >
-            Expense{" "}
+            Expense
             <span style={{ color: "#ff0000", fontSize: "25px" }}>
               {expense} $
             </span>
@@ -58,11 +58,11 @@ const OverView = ({ expense, income, addTransaction }) => {
             style={{
               borderColor: "#bbefa9",
               backgroundColor: "#bbefa9",
-              color: "#949d93",
+              color: "#8d8d8d",
               fontSize: "25px",
             }}
           >
-            Income{" "}
+            Income
             <span style={{ color: "#27a300", fontSize: "25px" }}>
               {income} $
             </span>

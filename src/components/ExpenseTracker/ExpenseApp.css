@@ -83,7 +83,7 @@
   box-shadow: 5px 10px 8px #acacac;
   margin-bottom: 10px;
 }
-form {
+.form-expense {
   display: flex;
   padding: 5px;
   flex-direction: column;
@@ -105,7 +105,7 @@ form {
   font-size: 23px;
 }
 .input::placeholder {
-  color: #c4c6c7;
+  color: #8d8d8d;
   font-size: 18px;
 }
 .radioBox {
@@ -115,7 +115,7 @@ form {
   font-size: 25px;
 }
 .radioBox label {
-  color: #949d93;
+  color: #6e6e6e;
 }
 
 input[type="radio"]:after {
@@ -171,7 +171,7 @@ input[type="radio"]:checked:after {
   padding-left: 5px;
 }
 .search::placeholder {
-  color: #9d9ba0;
+  color: #8d8d8d;
   display: block;
   padding-left: 5px;
   font-size: 17px;
@@ -209,7 +209,7 @@ h3 {
   background-color: #aef3a2;
 }
 
-h2 {
+.p-expense {
   font-size: 40px;
   color: #ff7d03;
   margin-left: 30%;
