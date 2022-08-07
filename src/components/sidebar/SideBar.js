@@ -26,7 +26,7 @@ const SideBar = () => {
         <Link to="/" className="sid-link">
           <BsFillCalendar2DayFill className="icon" />
         </Link>
-        <Link to="/" className="sid-link">
+        <Link to="/calculator" className="sid-link">
           <BsCalculatorFill className="icon" />
         </Link>
         <Link to="/" className="sid-link">

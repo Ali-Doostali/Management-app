@@ -1,0 +1,124 @@
+.container {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  width: 1328px;
+  align-items: center;
+  background-color: #f5f6fc;
+  padding: auto;
+}
+
+.h1-box {
+  margin-top: 10px;
+}
+.h1-calculator {
+  font-size: 50px;
+  color: #ff7d03;
+  margin-top: 5px;
+  margin-left: 28%;
+  width: 0ch;
+  overflow: hidden;
+  animation: typing 1s steps(14) forwards 1s;
+}
+@keyframes typing {
+  100% {
+    width: 14ch;
+  }
+}
+
+div hr {
+  width: 700px;
+}
+
+.body-calculator {
+  width: 400px;
+  height: 500px;
+  border: 3px solid #7b3eb1;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 5px 10px 8px #a8a8a8;
+}
+
+.input-calculator {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.input-calculator input {
+  width: 350px;
+  height: 50px;
+  border: 2px solid #8b8b8b;
+  border-radius: 10px;
+  color: #7b3eb1;
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 5px 10px 8px #d3d3d3;
+}
+.input-calculator input:focus {
+  width: 350px;
+  height: 50px;
+  outline: none;
+  border: 2px solid #ff7d03;
+  border-radius: 10px;
+  color: #7b3eb1;
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 5px 10px 8px #d3d3d3;
+}
+
+.btn-calculator {
+  font-size: 30px;
+  width: 85px;
+  height: 55px;
+  outline: none;
+  background-color: #14213d;
+  padding: 5px 10px;
+  color: #ffa200;
+  border-radius: 5px;
+  border: 1px solid #14213d;
+  box-shadow: 5px 10px 8px #c5c5c5;
+  margin: 13px 0 5px 12px;
+  cursor: pointer;
+}
+.btn-calculator:hover {
+  font-size: 30px;
+  outline: none;
+  background-color: #ffa200;
+  padding: 5px 10px;
+  color: #14213d;
+  border-radius: 5px;
+  border: 1px solid #ffa200;
+  cursor: pointer;
+}
+
+.btn-calculator-delete {
+  font-size: 15px;
+  width: 80px;
+  height: 55px;
+  outline: none;
+  background-color: #e11d48;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #e11d48;
+  box-shadow: 5px 10px 8px #c5c5c5;
+  margin-left: 15px;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+.btn-calculator-delete:hover{
+    font-size: 15px;
+  width: 80px;
+  height: 55px;
+  outline: none;
+  background-color: #fff;
+  padding: 5px 10px;
+  color: #e11d48;
+  border-radius: 5px;
+  border: 1px solid #e11d48;
+  box-shadow: 5px 10px 8px #c5c5c5;
+  margin-left: 15px;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
